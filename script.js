@@ -133,3 +133,28 @@ weddingAudio.addEventListener('error', () => {
 });
 
 updateMusicButton();
+
+const params = new URLSearchParams(window.location.search);
+
+const name1 = params.get('name1');
+const name2 = params.get('name2');
+
+if (name1?.trim()) {
+  const firstName = escapeHTML(name1.trim());
+  const secondName = name2?.trim()
+    ? escapeHTML(name2.trim())
+    : '';
+
+  const namesHTML = secondName
+    ? `${firstName} <span>&</span> ${secondName}`
+    : firstName;
+
+  document.getElementById('coverNames').innerHTML = namesHTML;
+  document.getElementById('coupleNames').innerHTML = namesHTML;
+}
+
+function escapeHTML(text) {
+  const element = document.createElement('span');
+  element.textContent = text;
+  return element.innerHTML;
+}

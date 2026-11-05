@@ -594,4 +594,12 @@ button{
     width: 200px;
     height: 200px;
   }
+  .qr-caption {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: #a28a6c;
+  margin-top: 40px;
+  padding-top: 55px;
+}
 }
