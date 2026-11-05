@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f2e8">
+  <title>ធៀបអញ្ជើញមង្គលការ | Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Battambang:wght@300;400;700&family=Kantumruy+Pro:wght@300;400;500;600;700&family=Moul&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sparkles" aria-hidden="true"></div>
+
+  <!-- PAGE 1: Envelope opening -->
+  <main>
+    <section class="screen cover-screen active" id="page-cover">
+      <div class="cover-photo"></div>
+      <div class="cover-content">
+        <p class="eyebrow">WEDDING INVITATION</p>
+        <div class="ornament">❦</div>
+        <p class="khmer-label">សូមគោរពអញ្ជើញ</p>
+        <h1 class="cover-names">ភត្រា <span>&</span>វែនតា</h1>
+        <p class="cover-date">ថ្ងៃអាទិត្យ ទី១៥ ខែមីនា ឆ្នាំ២០២៧</p>
+
+        <div class="envelope-wrap" id="envelopeWrap">
+          <div class="envelope">
+            <div class="envelope-back"></div>
+            <div class="letter">
+              <span class="letter-flower">✿</span>
+              <span>សេចក្តីស្រឡាញ់</span>
+              <strong>សូមបើកធៀប</strong>
+            </div>
+            <div class="envelope-left"></div>
+            <div class="envelope-right"></div>
+            <div class="envelope-bottom"></div>
+            <div class="envelope-flap"></div>
+            <div class="wax-seal">T<span>&</span>D</div>
+          </div>
+        </div>
+        <button class="open-button" id="openInvitation">
+          <span>បើកធៀបអញ្ជើញ</span><span class="button-arrow">↗</span>
+        </button>
+        <p class="tap-hint">TAP TO OPEN YOUR INVITATION</p>
+      </div>
+      <div class="cover-bottom">MADE WITH LOVE · 2027</div>
+    </section>
+
+    <!-- PAGE 2: Main invitation -->
+    <section class="screen invitation-screen" id="page-invitation">
+      <nav class="mini-nav">
+        <span class="nav-brand">P <i>&</i> D</span>
+        <span>OUR WEDDING DAY</span>
+        <button class="music-toggle" id="musicToggle" aria-label="Music toggle"><i class="fa-solid fa-music"></i>  <small>Music</small></button>
+      </nav>
+
+      <div class="hero-section">
+        <div class="hero-image-wrap">
+          <img class="hero-image" src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1400&q=85" alt="Wedding couple">
+          <div class="image-frame"></div>
+          <span class="image-caption">A DAY TO REMEMBER</span>
+        </div>
+        <div class="hero-text reveal">
+          <p class="eyebrow gold">TOGETHER WITH OUR FAMILIES</p>
+          <p class="khmer-label">យើងខ្ញុំមានកិត្តិយសសូមគោរពអញ្ជើញ</p>
+          <h2 class="couple-names">ម៉ៅ ភត្រា <span>&</span>អូន វែនតា</h2>
+          <p class="english-names">PHEAKTRA <i>&</i> VEANTA</p>
+          <div class="divider-ornament"><span></span>❦<span></span></div>
+          <p class="invitation-message">
+            សូមគោរពអញ្ជើញ ឯកឧត្តម លោកជំទាវ លោក លោកស្រី
+            អ្នកនាងកញ្ញា និងមិត្តភក្តិទាំងអស់ អញ្ជើញចូលរួមជាភ្ញៀវកិត្តិយស
+            ក្នុងពិធីមង្គលការរបស់យើងខ្ញុំ។
+          </p>
+        </div>
+      </div>
+
+      <!-- PRE-WEDDING COUPLE PROFILE -->
+<section class="prewedding-section reveal">
+  <p class="eyebrow gold">THE HAPPY COUPLE</p>
+  <h2 class="prewedding-title">គូស្វាមីភរិយាថ្មី</h2>
+
+  <div class="prewedding-layout">
+
+    <!-- Groom -->
+    <div class="partner-name groom-name">
+      <span class="partner-label">THE GROOM</span>
+      <h3>សុផល CG</h3>
+      <p>SOPHAL CG</p>
+    </div>
+
+    <!-- Pre-wedding Photo -->
+    <div class="prewedding-photo-wrap">
+      <img
+        class="prewedding-photo"
+        src="wedding_image/istockphoto-1152667831-612x612.jpg"
+        alt="Pre-wedding photo of Pheaktra and Veanta"
+      >
+      <div class="prewedding-photo-frame"></div>
+    </div>
+
+    <!-- Bride -->
+    <div class="partner-name bride-name">
+      <span class="partner-label">THE BRIDE</span>
+      <h3>ចន្ដា CG</h3>
+      <p>CHANDA CG</p>
+    </div>
+
+  </div>
+
+  <div class="prewedding-ornament"><i class="fa-solid fa-champagne-glasses"></i></div>
+</section>
+
+      <div class="countdown-section reveal">
+        <p class="eyebrow gold">SAVE THE DATE</p>
+        <h3>រាប់ថយក្រោយទៅកាន់ថ្ងៃពិសេស</h3>
+        <div class="countdown" id="countdown">
+          <div><strong id="days">000</strong><span>ថ្ងៃ</span></div>
+          <i>:</i>
+          <div><strong id="hours">00</strong><span>ម៉ោង</span></div>
+          <i>:</i>
+          <div><strong id="minutes">00</strong><span>នាទី</span></div>
+          <i>:</i>
+          <div><strong id="seconds">00</strong><span>វិនាទី</span></div>
+        </div>
+        <p class="countdown-date">SUNDAY · 15 MARCH 2027</p>
+      </div>
+
+      <div class="quote-section reveal">
+        <span class="quote-mark">“</span>
+        <p>ពីរដួងចិត្ត រួមដំណើរជីវិតតែមួយ<br>សាងអនុស្សាវរីយ៍ដ៏មានន័យជារៀងរហូត។</p>
+        <span class="quote-en">TWO HEARTS, ONE BEAUTIFUL JOURNEY</span>
+      </div>
+      <button class="next-button" data-go="page-details">មើលព័ត៌មានកម្មវិធី <span>↓</span></button>
+    </section>
+
+    <!-- PAGE 3: Details, gallery and map -->
+    <section class="screen details-screen" id="page-details">
+      <div class="section-heading reveal">
+        <p class="eyebrow gold">THE WEDDING DAY</p>
+        <h2>ព័ត៌មានពិធីមង្គលការ</h2>
+        <div class="divider-ornament"><span></span>❦<span></span></div>
+        <p>យើងខ្ញុំរង់ចាំស្វាគមន៍វត្តមានរបស់អ្នកនៅថ្ងៃដ៏ពិសេសនេះ។</p>
+      </div>
+
+      <div class="event-info">
+        <article class="info-card reveal">
+          <div class="info-icon">✧</div>
+          <p class="eyebrow gold">DATE & TIME</p>
+          <h3>ថ្ងៃអាទិត្យ</h3>
+          <p>ទី១៥ ខែមីនា ឆ្នាំ២០២៧</p>
+          <p class="muted">ចាប់ពីម៉ោង ៥:០០ ល្ងាច</p>
+        </article>
+        <article class="info-card reveal">
+          <div class="info-icon">⌖</div>
+          <p class="eyebrow gold">LOCATION</p>
+          <h3>ភោជនីយដ្ឋាន សុខសាន្ត</h3>
+          <p>ផ្លូវ ២៧១ រាជធានីភ្នំពេញ</p>
+          <p class="muted">Phnom Penh, Cambodia</p>
+        </article>
+      </div>
+
+      <div class="schedule-section reveal">
+        <p class="eyebrow gold">SCHEDULE</p>
+        <h2>កម្មវិធីពិធីមង្គលការ</h2>
+        <div class="timeline">
+          <div class="timeline-item"><time>05:00 PM</time><span class="timeline-dot"></span><div><h3>ទទួលភ្ញៀវកិត្តិយស</h3><p>Welcome Reception</p></div></div>
+          <div class="timeline-item"><time>06:00 PM</time><span class="timeline-dot"></span><div><h3>ពិធីកាត់នំ និងថតរូប</h3><p>Cake Cutting & Photography</p></div></div>
+          <div class="timeline-item"><time>06:30 PM</time><span class="timeline-dot"></span><div><h3>ពិសាភោជនាហារ</h3><p>Wedding Dinner</p></div></div>
+          <div class="timeline-item"><time>07:30 PM</time><span class="timeline-dot"></span><div><h3>កម្មវិធីកម្សាន្ត</h3><p>Celebration & Entertainment</p></div></div>
+        </div>
+      </div>
+
+      <div class="gallery-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow gold">OUR MEMORIES</p>
+          <h2>អនុស្សាវរីយ៍របស់យើង</h2>
+          <p>Every picture tells a little story.</p>
+        </div>
+        <div class="gallery-grid">
+          <img class="reveal" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=900&q=85" alt="Wedding memory 1">
+          <img class="reveal" src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=900&q=85" alt="Wedding memory 2">
+          <img class="reveal" src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=900&q=85" alt="Wedding memory 3">
+        </div>
+      </div>
+
+<div class="map-section reveal">
+  <div class="map-heading">
+    <p class="eyebrow gold">FIND US</p>
+    <h2>ទីតាំងកម្មវិធី</h2>
+    <div class="divider-ornament">
+      <span></span>❦<span></span>
+    </div>
+    <p class="map-description">
+      យើងខ្ញុំសូមគោរពអញ្ជើញលោកអ្នកមកចូលរួម
+      ក្នុងថ្ងៃដ៏មានអត្ថន័យរបស់យើងខ្ញុំ។
+    </p>
+  </div>
+
+  <div class="map-card">
+    <div class="map-frame">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d7817.658681381763!2d104.884296!3d11.564089!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDMzJzUwLjciTiAxMDTCsDUzJzAzLjUiRQ!5e0!3m2!1skm!2skh!4v1793865522504!5m2!1skm!2skh"
+        width="100%"
+        height="100%"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+    </div>
+
+    <div class="map-info">
+      <div class="map-location-icon">⌖</div>
+
+      <div class="map-location-text">
+        <span class="map-label">WEDDING VENUE</span>
+        <h3>ភោជនីយដ្ឋាន សុខសាន្ត</h3>
+        <p>ផ្លូវ ២៧១ · រាជធានីភ្នំពេញ</p>
+      </div>
+
+      <a
+        class="map-button"
+        href="https://www.google.com/maps/search/?api=1&query=11.564089,104.884296"
+        target="_blank"
+        rel="noopener">
+        Get Directions <span>↗</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="map-footer">
+    <span>❦</span>
+    WE LOOK FORWARD TO SEEING YOU
+    <span>❦</span>
+  </div>
+</div>
+
+      <div class="rsvp-section reveal">
+        <span class="ornament">❦</span>
+        <h2>យើងខ្ញុំរង់ចាំវត្តមានអ្នក</h2>
+        <p>សូមអរគុណចំពោះកិត្តិយស និងពរជ័យដែលអ្នកផ្តល់ជូនយើងខ្ញុំ។</p>
+        <a class="rsvp-button" href="https://t.me/boytra_67" target="_blank" rel="noopener">បញ្ជាក់ការចូលរួម RSVP</a>
+        <p class="final-names">សុផល <span>&</span> ចន្ដា</p>
+        <p class="footer-note">WITH LOVE · FOREVER & ALWAYS</p>
+      </div>
+
+      <!-- Digital Wedding Gift -->
+<section class="gift-section reveal">
+
+  <p class="eyebrow gold">WEDDING GIFT</p>
+
+  <h2>ចងដៃតាមរយៈ KHQR</h2>
+
+  <p class="gift-description">
+    វត្តមានរបស់អ្នកគឺជាកាដូដ៏មានតម្លៃបំផុតសម្រាប់យើង។
+    សម្រាប់ភ្ញៀវដែលមានបំណងចងដៃតាមរយៈ KHQR
+    សូម Scan QR Code ខាងក្រោម។
+  </p>
+
+  <div class="gift-card">
+
+    <div class="gift-ornament">❦</div>
+
+    <h3>Wedding Gift</h3>
+    <p class="gift-couple">PHEAKTRA & VEANTA</p>
+
+    <!-- QR Code Image -->
+    <div class="qr-frame">
+      <img
+        src="wedding_image/photo_2026-11-05_16-03-18.jpg"
+        alt="Wedding Gift KHQR Code"
+        class="gift-qr"
+      >
+    </div>
+
+    <p class="qr-caption">SCAN TO SEND YOUR WEDDING GIFT</p>
+
+    <div class="gift-divider"></div>
+
+    <p class="gift-thankyou">
+      សូមអរគុណសម្រាប់ទឹកចិត្ត និងពរជ័យរបស់អ្នក។
+    </p>
+
+  </div>
+
+</section>
+      <button class="back-button" data-go="page-invitation">↑ ត្រឡប់ទៅខាងលើ</button>
+    </section>
+  </main>
+    <!-- Background Wedding Music -->
+<audio id="weddingAudio" loop preload="auto">
+  <source src="music/Get By With You (feat. Alex Nester) - Blue Deer Studio.mp3" type="audio/mpeg">
+  Your browser does not support audio.
+</audio>
+  <script src="script.js"></script>
+
+</body>
+</html>
