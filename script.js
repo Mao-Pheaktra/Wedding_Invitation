@@ -94,12 +94,20 @@ observeReveals();
 
 async function playWeddingMusic() {
   try {
+    // Wait until Supabase finishes loading the selected song
+    if (window.weddingMusicReady) {
+      await window.weddingMusicReady;
+    }
+
     await weddingAudio.play();
+
     isMusicPlaying = true;
     updateMusicButton();
+
   } catch (error) {
     isMusicPlaying = false;
     updateMusicButton();
+
     console.log('Music playback failed:', error);
   }
 }
